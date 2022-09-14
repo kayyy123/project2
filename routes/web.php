@@ -23,3 +23,6 @@ Route::get('/login-owner', function () {
 Route::get('/login-divisi', function () {
     return view('login.divisi');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard');
+});
