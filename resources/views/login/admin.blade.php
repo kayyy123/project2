@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets\css/login.css">
 </head>
+
 <body>
     <!-- start navbar -->
     <nav class="navbar">
@@ -37,4 +39,5 @@
         </form>
     </div>
 </body>
+
 </html>

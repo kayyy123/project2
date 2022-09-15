@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,5 @@ Route::get('/login-divisi', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
+
+Route::get('/dashboard/barang',[DashboardController::class,'barang']);
