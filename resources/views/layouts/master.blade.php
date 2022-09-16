@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    @yield('content')
     <!-- start navbar -->
     <div class="fContainer">
         <nav class="wrapper">
             <h1>PT. INVENTARIS GELORA GEMILANG</h1>
         </nav>
+        @yield('content')
     </div>
     <!-- end navbar -->
     
