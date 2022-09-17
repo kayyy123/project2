@@ -25,7 +25,7 @@
         <td>RP. {{$b->harga}}</td>
         <td>{{$b->asal_barang}}</td>
         <td>{{$b->waktu}}</td>
-        <td><a href="/dashboard/{{$b->kode_barang}}/edit">EDIT</a></td>
+        <td><a href="/dashboard/{{$b->id}}/edit">EDIT</a></td>
     </tr>
     @endforeach
     <a href="/dashboard/create_laptop">add data</a>
