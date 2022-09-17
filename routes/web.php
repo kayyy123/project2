@@ -34,3 +34,4 @@ Route::get('/dashboard/tabel_barang',[DashboardController::class,'tabel_barang']
 Route::get('/dashboard/create_laptop',[DashboardController::class,'create_laptop']);
 Route::post('/dashboard/store',[DashboardController::class,'store']);
 Route::get('/dashboard/{id}/edit',[DashboardController::class,'edit']);
+Route::put('/dashboard/{id}',[DashboardController::class,'update']);

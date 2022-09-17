@@ -30,7 +30,15 @@ class DashboardController extends Controller
     {
         $barang = Dashboard::find($id);
         // dd($barang);
-        return view('dashboard.edit');
+        return view('dashboard.edit',compact('barang'));
+    }
+
+    public function update($id, Request $request)
+    {
+        $barang = Dashboard::find($id);
+        // dd($request);
+        $barang->update($request->except(['_token','submit']));
+        return redirect('/dashboard/tabel_barang');
     }
     
 }
