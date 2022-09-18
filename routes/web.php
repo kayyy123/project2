@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -16,15 +17,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 
-Route::get('/login-admin', function () {
-    return view('login.admin');
-});
-Route::get('/login-owner', function () {
-    return view('login.owner');
-});
-Route::get('/login-divisi', function () {
-    return view('login.divisi');
-});
+Route::get('/login/login',[LoginController::class]);
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });

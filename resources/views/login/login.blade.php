@@ -10,17 +10,6 @@
 </head>
 
 <body>
-    <!-- start navbar -->
-    <nav class="navbar">
-        <div class="navigation">
-            <ul>
-                <li><a href="/login-owner">Owner</a></li>
-                <li><a href="/login-admin">Admin</a></li>
-                <li><a href="/login-divisi">Divisi</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- end navbar -->
     <div class="container">
         <form action="" method="">
             <div class="title">
@@ -29,7 +18,7 @@
             </div>
             <div class="input-box">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder='Masukan username' maxlength="32" cellspacing="5px" required>
+                <input type="text" name="email" id="email" placeholder='Masukan Email' maxlength="32" cellspacing="5px" required>
             </div>
             <div class="input-box">
                 <label for="password">Password</label>

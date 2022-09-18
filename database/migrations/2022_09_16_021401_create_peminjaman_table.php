@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('peminjaman', function (Blueprint $table) {
             $table->id();
             $table->string('nama_barang');
+            $table->foreignId('kode_barang')->unique();
             $table->string('divisi');
             $table->enum('select',['laptop','mouse','keyboard','infocus','printer']);
             $table->string('quantity');
