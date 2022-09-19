@@ -1,3 +1,7 @@
+@extends('layouts.master')
+
+@section('content')
+
 <h1>EDIT LAPTOP</h1>
 
 <form action="/dashboard/barang/{{$barang->id}}" method="POST">
@@ -11,3 +15,5 @@
     <input type="text" name="waktu" placeholder="Masukan waktu" value="{{$barang->waktu}}"><br>
     <input type="submit" name="submit" value="update">
 </form>
+
+@endsection

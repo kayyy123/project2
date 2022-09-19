@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form action="{{route('postlogin')}}" method="POST">
+        <form action="{{ url('login/proses') }}" method="POST">
             @csrf
             <div class="title">
                 <h3>PT. INVENTARIS GELORA GEMILANG</h3><br>
@@ -19,12 +19,26 @@
             </div>
             <div class="input-box">
                 <label for="email">Email</label>
-                <input type="text" name="email" placeholder='Masukan Email' maxlength="32" cellspacing="5px" required>
+                <input autofocus type="text"
+                @error('email')
+                    is-invalid
+                @enderror
+                name="email" placeholder='Masukan Email' value="{{ old('email') }}"  maxlength="32" cellspacing="5px" required>
             </div>
+            @error('email')
+                <div class="message">
+                    {{$message}}
+                </div>
+            @enderror
             <div class="input-box">
                 <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Masukan Password" maxlength="16" required>
+                <input autofocus type="password"
+                @error('password')
+                    is-invalid
+                @enderror
+                name="password" placeholder="Masukan Password" maxlength="16" required>
             </div>
+            
             <button type="submit">LOGIN</button>
         </form>
     </div>

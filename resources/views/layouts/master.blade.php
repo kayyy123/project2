@@ -26,6 +26,8 @@
     <!-- end navbar -->
 </div>
 
+@yield('content')
+
 </body>
 
 </html>

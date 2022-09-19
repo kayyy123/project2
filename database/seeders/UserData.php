@@ -24,7 +24,7 @@ class UserData extends Seeder
                 'email' => 'owner@yogaprindavan.com'
             ],
             [
-                'name' => 'Admisitrator',
+                'name' => 'Administrator',
                 'username' => 'admin',
                 'password' => bcrypt('12345678'),
                 'level' => 2,
