@@ -1,6 +1,6 @@
-<h1>CREATE LAPTOP</h1>
+<h1>EDIT LAPTOP</h1>
 
-<form action="/dashboard/{{$barang->id}}" method="POST">
+<form action="/dashboard/barang/{{$barang->id}}" method="POST">
     @method('put')
     @csrf
     <input type="text" name="kode_barang" placeholder="Masukan Kode Barang" value="{{$barang->kode_barang}}"><br>
