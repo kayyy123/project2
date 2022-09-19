@@ -1,6 +1,7 @@
+
 <h1>CREATE LAPTOP</h1>
 
-<form action="/dashboard/store" method="POST">
+<form action="/dashboard/barang/store" method="POST">
     @csrf
     <input type="text" name="kode_barang" placeholder="Masukan Kode Barang"><br>
     <input type="text" name="nama_barang" placeholder="Masukan Nama Barang"><br>

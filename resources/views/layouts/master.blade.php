@@ -10,24 +10,22 @@
 </head>
 
 <body>
-    <!-- start navbar -->
     <div class="fContainer">
-        <nav class="wrapper">
-            <h1>PT. INVENTARIS GELORA GEMILANG</h1>
-        </nav>
-        @yield('content')
-    </div>
-    <!-- end navbar -->
-    
-    <!-- start sidebar -->
-    <div class="sidebar">
-        <header>HALO</header>
-        <label>NAME</label>
-        <ul>
-            <a href="#">LOGOUT</a>
-        </ul>
-    </div>
+        <!-- start sidebar -->
+        <div class="sidebar">
+        <header>My app</header>
+    </div> 
     <!-- end sidebar -->
+    
+    <!-- start navbar -->
+    <nav class="wrapper">
+        <ul>
+            <h2>PT INVENTARIS GELORA GEMILANG</h2>
+        </ul>
+    </nav>
+    <!-- end navbar -->
+</div>
+
 </body>
 
 </html>
