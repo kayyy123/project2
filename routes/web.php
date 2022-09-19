@@ -17,10 +17,12 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 
-Route::get('/login/login',[LoginController::class]);
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
+
+Route::get('/login',[LoginController::class,'index']);
+
 
 Route::get('/dashboard/barang',[DashboardController::class,'barang']);
 Route::get('/dashboard/tabel_barang',[DashboardController::class,'tabel_barang']);
