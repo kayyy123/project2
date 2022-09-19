@@ -1,5 +1,7 @@
+@extends('layouts.master')
 
-<h1>CREATE LAPTOP</h1>
+@section('content')
+<h2>CREATE LAPTOP</h2>
 
 <form action="/dashboard/barang/store" method="POST">
     @csrf
@@ -11,3 +13,5 @@
     <input type="text" name="waktu" placeholder="Masukan waktu"><br>
     <input type="submit" name="submit" value="save">
 </form>
+
+@endsection

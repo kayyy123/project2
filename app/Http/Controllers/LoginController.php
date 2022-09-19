@@ -12,7 +12,7 @@ class LoginController extends Controller
         if($user->level == '1'){
           return redirect()->intended('owner@yogaprindavan.com');  
         }elseif($user->level == '2'){
-            return redirect()->intenteded('admin');
+            return redirect()->intenteded('admin@lorayang.com');
         }
       }
       return view('login.login');
@@ -38,7 +38,7 @@ class LoginController extends Controller
                 if ($user->level == '1') {
                     return redirect()->intended('owner@yogaprindavan.com');
                 } elseif ($user->level == '2') {
-                    return redirect()->intenteded('admin');
+                    return redirect()->intenteded('admin@lorayang.com');
                 }
             }
 
@@ -48,5 +48,16 @@ class LoginController extends Controller
         return back()->withErrors([
             'email' => 'Maaf Email atau Password anda Salah'
         ])->onlyInput('Email');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/login');
     }
 }

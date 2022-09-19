@@ -42,7 +42,9 @@
             <td><a href="/dashboard/barang/{{$b->id}}/edit">EDIT</a></td>
         </tr>
         @endforeach
-        <a href="/dashboard/barang/create_laptop">add data</a>
+        <div class="button">
+            <a href="/dashboard/barang/create_laptop">add data</a>
+        </div>
     </table>
 </body>
 </html>
