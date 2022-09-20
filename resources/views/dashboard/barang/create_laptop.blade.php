@@ -11,7 +11,8 @@
     <input type="text" name="harga" placeholder="Masukan harga"><br>
     <input type="text" name="asal_barang" placeholder="Masukan asal barang"><br>
     <input type="text" name="waktu" placeholder="Masukan waktu"><br>
-    <input type="submit" name="submit" value="save">
+    <!-- <input type="submit" name="submit" value="save"> -->
+    <button type="submit" name="submit">Save</button>
 </form>
 
 @endsection

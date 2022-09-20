@@ -13,7 +13,8 @@
         <input type="text" name="harga" placeholder="Masukan harga" value="{{$barang->harga}}"><br>
         <input type="text" name="asal_barang" placeholder="Masukan asal barang" value="{{$barang->asal_barang}}"><br>
         <input type="text" name="waktu" placeholder="Masukan waktu" value="{{$barang->waktu}}"><br>
-        <input type="submit" name="submit" value="update">
+        <!-- <input type="submit" name="submit" value="update"> -->
+        <button type="submit" name="submit">Update</button>
     </form>
 </div>
 
