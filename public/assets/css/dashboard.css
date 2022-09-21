@@ -63,20 +63,38 @@ table {
     height: 50px;
     margin-left: 265px;
     /* margin: auto; */
-    border: 1px solid;
+    /* border: 1px solid;    */
     margin-bottom: 10px;
-    background-color: gray;
+    background-color: #367E18;
     cursor: pointer;
     text-align: center;
     /* vertical-align: middle; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;   
 }
 
-a {
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+td {
+    text-align: center;
+    height: 60px;
+}
+
+table tr td a {
     text-decoration: none;
     text-align: center;
+    color: white;
+    /* border: 1px solid black; */
+    /* width: 110px; */
+    /* height: 50px; */
+    background-color: #367E18;
+    cursor: pointer;
+    border-radius: 10px;
     /* border: 1px solid red; */
 }
 
