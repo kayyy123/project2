@@ -14,13 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('pengembalian', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('kode_barang')->unique();
+            $table->id('id_barang');
             $table->string('nama_barang');
-            $table->enum('select', ['laptop', 'mouse', 'keyboard', 'infocus', 'printer']);
-            $table->string('divisi');            
-            $table->string('quantity');         
-            $table->date('estimasi');
+            $table->enum('katagori', ['laptop', 'led_tv', 'infocus', 'printer']);
+            $table->string('quantity');
+            $table->text('masalah');
             $table->timestamps();
         });
     }

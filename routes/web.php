@@ -47,6 +47,6 @@ Route::group(['middleware' => ['auth']],function(){
 Route::get('/dashboard/barang/tabel_barang',[BarangController::class,'tabel_barang']);
 Route::get('/dashboard/barang/create_laptop',[BarangController::class,'create_laptop']);
 Route::post('/dashboard/barang/store',[BarangController::class,'store']);
-Route::get('/dashboard/barang/{id}/edit',[BarangController::class,'edit']);
-Route::put('/dashboard/barang/{id}',[BarangController::class,'update']);
+Route::get('/dashboard/barang/{id_barang}/edit',[BarangController::class,'edit']);
+Route::put('/dashboard/barang/{id_barang}',[BarangController::class,'update']);
 

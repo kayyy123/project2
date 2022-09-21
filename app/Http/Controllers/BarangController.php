@@ -25,16 +25,16 @@ class BarangController extends Controller
         return redirect('/dashboard/barang/tabel_barang');
     }
 
-    public function edit($id)
+    public function edit($id_barang)
     {
-        $barang = Barang::find($id);
+        $barang = Barang::find($id_barang);
         // dd($barang);
-        return view('dashboard.barang.edit',compact('barang'));
+        return view('dashboard.barang.edit',compact(['barang']));
     }
 
-    public function update($id, Request $request)
+    public function update($id_barang, Request $request)
     {
-        $barang = Barang::find($id);
+        $barang = Barang::find($id_barang);
         // dd($request);
         $barang->update($request->except(['_token','submit']));
         return redirect('/dashboard/barang/tabel_barang');

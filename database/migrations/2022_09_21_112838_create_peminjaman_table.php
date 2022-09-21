@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('garansi', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('kode_barang')->unique();
+        Schema::create('peminjaman', function (Blueprint $table) {
+            $table->id('id_barang');
             $table->string('nama_barang');
-            $table->string('problem');
-            $table->date('waktu');
+            $table->string('divisi');
+            $table->enum('katagori', ['laptop', 'led_tv', 'infocus', 'printer']);
+            $table->string('quantity');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('garansi');
+        Schema::dropIfExists('peminjaman');
     }
 };

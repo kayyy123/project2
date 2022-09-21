@@ -1,32 +1,33 @@
 @extends('layouts.master')
 
 @section('content')
-<h2>TABEL BARANG</h2>
 
-<table border="2">
-    <tr>
-        <th>Kode Barang</th>
-        <th>Nama Barang</th>
-        <th>Quantity</th>
-        <th>Harga</th>
-        <th>Asal Barang</th>
-        <th>Waktu</th>
-        <th>AKSI</th>
-    </tr>
-    @foreach($barang as $b)
-    <tr>
-        <td>{{$b->kode_barang}}</td>
-        <td>{{$b->nama_barang}}</td>
-        <td>{{$b->quantity}}</td>
-        <td>RP. {{$b->harga}}</td>
-        <td>{{$b->asal_barang}}</td>
-        <td>{{$b->waktu}}</td>
-        <td><a href="/dashboard/barang/{{$b->id}}/edit">EDIT</a></td>
-    </tr>
-    @endforeach
-    <div class="button">
-        <a href="/dashboard/barang/create_laptop">add data</a>
-    </div>
-</table>
+<div class="container">
+    <h2>TABEL BARANG</h2>
+
+    <table border="1">
+        <tr>
+            <th>Nama Barang</th>
+            <th>Katagori</th>
+            <th>Quantity</th>
+            <th>Asal Barang</th>
+            <th>Waktu</th>
+            <th>AKSI</th>
+        </tr>
+        @foreach($barang as $b)
+        <tr>
+            <td>{{$b->nama_barang}}</td>
+            <td>{{$b->katagori}}</td>
+            <td>{{$b->quantity}}</td>
+            <td>{{$b->asal_barang}}</td>
+            <td>{{$b->waktu}}</td>
+            <td><a class="back" href="/dashboard/barang/{{$b->id_barang}}/edit">EDIT</a></td>
+        </tr>
+        @endforeach
+        <div class="button">
+            <a href="/dashboard/barang/create_laptop">add data</a>
+        </div>
+    </table>
+</div>
 
 @endsection

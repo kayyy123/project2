@@ -31,18 +31,20 @@ ul {
   
   
   h2{
-      text-align: center;
-      color: #136678;
-    padding-left: 80px;
+    text-align: center;
+    color: #136678;
+    /* padding-left: 40px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
 .sidebar{
     position: fixed;
     left: 0;
-    width: 100px;
+    width: 160px;
     height: 100%;
-    width: 100px;
-    background: #11101d;
+    /* width: 100px; */
+    background: #93CCEA;
 }
 .sidebar header {
     background-color: yellowgreen;
@@ -61,7 +63,7 @@ table {
 .button {
     width: 90px;
     height: 50px;
-    margin-left: 265px;
+    margin-left: 180px;
     /* margin: auto; */
     /* border: 1px solid;    */
     margin-bottom: 10px;
@@ -83,23 +85,24 @@ table {
 td {
     text-align: center;
     height: 60px;
+    /* border: 2px solid red; */
 }
 
 table tr td a {
     text-decoration: none;
     text-align: center;
     color: white;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* width: 110px; */
     /* height: 50px; */
     background-color: #367E18;
     cursor: pointer;
     border-radius: 10px;
-    /* border: 1px solid red; */
 }
 
 form {
-    width: 100%;
+    margin-left: 160px;
+    /* width: 100%; */
     height: 550px;
     /* padding-left: 100px; */
     display: flex;
@@ -108,16 +111,71 @@ form {
     align-items: center;
     text-align: left;
     /* border: 1px solid red; */
-    /* background-color: chartreuse; */
 }
 
 form input {
     height: 50px;
     width: 900px;
     padding: 0;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 10px;
 }
 
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
 
+input::placeholder {
+    font-style: italic;
+    padding-left: 5px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    margin-top:  10px;
+    background-color: #367E18;
+    color: white;
+    border-radius: 10px;
+}
+
+.container {
+    /* border: 1px solid red; */
+    margin-left: 160px;
+}
+
+nav {
+    /* border: 1px solid red; */
+    margin-left: 160px;
+}
+
+.input-button {
+    /* border: 1px solid red; */
+    padding-right: 810px;
+}
+
+.input-button a{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #367E18;
+    color: white;
+    border-radius: 10px;
+}
+
+select {
+    border: 1px solid black;
+    height: 50px;
+    width: 915px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 10px;
+}
 
 
 

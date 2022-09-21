@@ -14,20 +14,23 @@
     <div class="fContainer">
         <!-- start sidebar -->
         <div class="sidebar">
-        <header>My app</header>
-    </div> 
-    <!-- end sidebar -->
-    
-    <!-- start navbar -->
-    <nav class="wrapper">
-        <ul>
-            <h2>PT INVENTARIS GELORA GEMILANG</h2>
-        </ul>
-    </nav>
-    <!-- end navbar -->
-</div>
+            <header>My app</header>
+            <div class="toogle">
+                <li><a href="/dashboard/barang/table_barang">Barang</a></li>
+            </div>
+        </div>
+        <!-- end sidebar -->
 
-@yield('content')
+        <!-- start navbar -->
+        <nav class="wrapper">
+            <ul>
+                <h2>PT INVENTARIS GELORA GEMILANG</h2>
+            </ul>
+        </nav>
+        <!-- end navbar -->
+    </div>
+
+    @yield('content')
 
 </body>
 
